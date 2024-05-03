@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.16.xsd">
+    <include file="data/configs-data.sql" relativeToChangelogFile="true"/>
+    <include file="data/referenz.sql" relativeToChangelogFile="true"/>
+    <include file="data/behoerde.sql" relativeToChangelogFile="true"/>
+    <include file="data/betreiber.sql" relativeToChangelogFile="true"/>
+    <include file="data/ansprechpartner.sql" relativeToChangelogFile="true"/>
+    <include file="data/ansprechpartner_kommunikationsverbindungen.sql" relativeToChangelogFile="true"/>
+    <include file="data/betriebsstaette.sql" relativeToChangelogFile="true"/>
+    <include file="data/betriebsstaette_ansprechpartner.sql" relativeToChangelogFile="true"/>
+    <include file="data/betriebsstaette_einleiter_nummern.sql" relativeToChangelogFile="true"/>
+    <include file="data/anlage.sql" relativeToChangelogFile="true"/>
+    <include file="data/anlagedaten.sql" relativeToChangelogFile="true"/>
+    <include file="data/betriebsstunden.sql" relativeToChangelogFile="true"/>
+    <include file="data/berichte.sql" relativeToChangelogFile="true"/>
+    <include file="data/brennstoffdaten.sql" relativeToChangelogFile="true"/>
+    <include file="data/brennstoffkategorie_referenz.sql" relativeToChangelogFile="true"/>
+    <include file="data/fill_anlagedaten_with_emtpy_data.sql" relativeToChangelogFile="true"/>
+    <include file="data/fill_berichte_with_empty_data.sql" relativeToChangelogFile="true"/>
+    <include file="data/betriebsstaette_zustaendige_behoerden_edited.sql" relativeToChangelogFile="true"/>
+</databaseChangeLog>

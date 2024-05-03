@@ -1,0 +1,16 @@
+<infinispan xmlns="urn:infinispan:config:12.1">
+    <cache-container>
+        <local-cache name="entity">
+            <memory>
+                <object size="10000" />
+            </memory>
+            <expiration lifespan="60000" max-idle="30000"/>
+        </local-cache>
+        <local-cache name="local-query">
+            <memory>
+                <object size="1000" />
+            </memory>
+            <expiration lifespan="10000"/>
+        </local-cache>
+    </cache-container>
+</infinispan>
