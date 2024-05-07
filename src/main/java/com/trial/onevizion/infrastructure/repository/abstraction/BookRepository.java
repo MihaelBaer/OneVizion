@@ -1,4 +1,4 @@
-package com.trial.onevizion.infrastructure.repository;
+package com.trial.onevizion.infrastructure.repository.abstraction;
 
 import com.trial.onevizion.domain.models.Book;
 

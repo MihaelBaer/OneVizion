@@ -2,27 +2,8 @@
 <databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.16.xsd">
-    <include file="ddl/base-ddl-h2.sql" contextFilter="h2" relativeToChangelogFile="true"/>
-    <include file="ddl/base-ddl-postgresql.sql" contextFilter="postgres,prod" relativeToChangelogFile="true"/>
-    <include file="ddl/create-table-configs-h2.sql" contextFilter="h2" relativeToChangelogFile="true"/>
-    <include file="ddl/create-table-configs-postgres.sql" contextFilter="postgres" relativeToChangelogFile="true"/>
-    <include file="ddl/create-navigation-configs-prod.sql" contextFilter="prod" relativeToChangelogFile="true"/>
-    <include file="ddl/add_trigger_to_anlagedaten.sql" contextFilter="postgres,prod" relativeToChangelogFile="true"/>
-    <include file="ddl/create_brennstoffkategorie_referenz_table.sql" relativeToChangelogFile="true"/>
-    <include file="ddl/add_status_columns_to_anlagen_and_remove_from_bericht.sql" relativeToChangelogFile="true"/>
-    <include file="ddl/create_table_nutzwarme.sql" relativeToChangelogFile="true"/>
-    <include file="ddl/create_table_brennstoffdaten_erganzen.sql" relativeToChangelogFile="true"/>
-    <include file="ddl/create_table_vorschriften.sql" relativeToChangelogFile="true"/>
-    <include file="ddl/create_table_berichtdaten_and_alter_bernnstoffdaten_nutzwarme_betriebsstunden.sql" relativeToChangelogFile="true"/>
-    <include file="ddl/GFAM-503-add_quelle_nr_field_max_length.sql" relativeToChangelogFile="true"/>
-    <include file="ddl/create_table_mailjobs.sql" relativeToChangelogFile="true"/>
-    <include file="ddl/create_tables_attribut_definition_and_attribut_wert.sql" relativeToChangelogFile="true"/>
-    <include file="ddl/create_table_parameter_wert.sql" relativeToChangelogFile="true"/>
-    <include file="ddl/create_table_betriebsstaette_kommunikationsverbindungen.sql" relativeToChangelogFile="true"/>
-    <include file="ddl/create_table_behoerde_kommunikationsverbindungen.sql" relativeToChangelogFile="true"/>
-    <include file="ddl/create_table_betriebsstaette_vertraulichkeitsgrund.sql" relativeToChangelogFile="true"/>
-    <include file="ddl/create_table_last_jobs.sql" relativeToChangelogFile="true"/>
-    <include file="ddl/add_sonstiger_column_to_referenz.sql" relativeToChangelogFile="true"/>
-    <include file="ddl/create_trigger_for_adding_mock_data_to_form_fields_v0.2.5.sql" relativeToChangelogFile="true"/>
-    <include file="ddl/create_table_anlage_zustaendige_behoerden.sql" relativeToChangelogFile="true"/>
+
+    <include file="ddl-scripts/create-book-seq.sql" relativeToChangelogFile="true"/>
+    <include file="ddl-scripts/create_table_book.sql" relativeToChangelogFile="true"/>
+
 </databaseChangeLog>

@@ -3,23 +3,7 @@
                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.16.xsd">
 
-    <!--    force-lib    -->
-    <includeAll relativeToChangelogFile="true" path="../force-lib/changelogs"/>
-
-    <include context="postgres" file="base/base-ddl.xml" relativeToChangelogFile="true"/>
-    <include context="postgres" file="base/base-data.xml" relativeToChangelogFile="true"/>
-    <include context="postgres" file="update/update.xml" relativeToChangelogFile="true"/>
-
-    <!-- TEST-Stage - nicht abwaerts-kompatibel -->
-    <include context="h2" file="base/base-ddl.xml" relativeToChangelogFile="true"/>
-    <include context="h2" file="base/base-data.xml" relativeToChangelogFile="true"/>
-    <include context="h2" file="update/update.xml" relativeToChangelogFile="true"/>
-
-    <!-- QS-Stage - nicht abwaerts-kompatibel -->
-    <include context="qs" file="base/base-ddl.xml" relativeToChangelogFile="true"/>
-
-    <!-- PROD-Stage - abwaerts-kompatibel -->
-    <include context="prod" file="base/base-ddl.xml" relativeToChangelogFile="true"/>
-    <include context="prod" file="update/update.xml" relativeToChangelogFile="true"/>
+    <include file="ddl/base-ddl.xml" relativeToChangelogFile="true"/>
+    <include file="ddl/base-data.xml" relativeToChangelogFile="true"/>
 
 </databaseChangeLog>

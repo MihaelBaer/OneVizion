@@ -1,6 +1,5 @@
-package com.trial.onevizion.application;
+package com.trial.onevizion.application.mapper;
 
-import com.trial.onevizion.application.mapper.BookMapper;
 import com.trial.onevizion.domain.models.Book;
 import com.trial.onevizion.presentation.dto.BookCreationDto;
 import com.trial.onevizion.presentation.dto.BookRetrievalDto;
@@ -16,7 +15,6 @@ class BookMapperTest {
 
         @BeforeEach
         void setUp() {
-            // Initialize the mapper
             bookMapper = Mappers.getMapper(BookMapper.class);
         }
 

@@ -1,7 +1,6 @@
-package com.trial.onevizion.application;
+package com.trial.onevizion.application.service;
 
 import com.trial.onevizion.application.mapper.BookMapper;
-import com.trial.onevizion.application.service.BookServiceImpl;
 import com.trial.onevizion.domain.models.Book;
 import com.trial.onevizion.infrastructure.repository.abstraction.BookRepository;
 import com.trial.onevizion.presentation.dto.BookCreationDto;
